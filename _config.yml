@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "Ysm"
+title                    : "Ysm's Home"
 title_separator          : "-"
 name                     : &name "颜劭铭"
 description              : &description "personal description"
