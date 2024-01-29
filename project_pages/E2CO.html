@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>E²CO</title>
+    <title>E²GCO</title>
     <!--=================Meta tags==========================-->
     <meta name="robots" content="index,follow">
-    <meta name="description" content="ALL-E: Aesthetics-guided Low-light Image Enhancement">
+    <meta name="description" content="E²GCO: Event-driven Eye-Gaze-Controlled Operation for Smartphone Interaction">
     <meta name="keywords" content="E2CO">
     <link rel="author" href="https://dongl-group.github.io">
     <!--=================js==========================-->
@@ -141,22 +141,23 @@
     <div id="content">
         <div id="content-inner">
             <div class="section head">
-                <h1>E²CO: Event-driven Eye-controlled Operation for Smartphone Interaction</h1>
+                <h1>E²GCO: Event-driven Eye-Gaze-Controlled Operation for Smartphone Interaction</h1>
                 <!--=================Authors==========================-->
                 <div class="authors" >
-                    <p>Shaoming Yan <sup>1</sup>, &nbsp;Yuanliang Ju<sup>1</sup>,&nbsp;Rong Quan <sup>1</sup>, &nbsp;
-                     Huawei Tu <sup>2</sup>, &nbsp;Dong Liang <sup>1</sup> &nbsp;</p>
+                    <p>Shaoming Yan <sup>1</sup>, &nbsp;Yuanliang Ju<sup>2</sup>,&nbsp;Rong Quan <sup>1</sup>, &nbsp;
+                     Huawei Tu <sup>3</sup>, &nbsp;Dong Liang <sup>1</sup> &nbsp;</p>
                 </div>
                 <div class="affiliations ">
                     <sup>1</sup> College of Computer Science and Technology, Nanjing University of Aeronautics and Astronautics, Nanjing, China <br>
-                    <sup>2</sup> Department of Computer Science and Information Technology, La Trobe University, Melbourne, Australia <br>
+                    <sup>2</sup> Shanghai Qi Zhi Institute, Shanghai, China <br>
+                    <sup>3</sup> Department of Computer Science and Information Technology, La Trobe University, Melbourne, Australia <br>
                 </div>
             </div>
             <br/>
             <!--=================Gif================================-->
             <div class="section" id="Visualization">
                 <h2>Visualization Results</h2>
-                <h3>Demonstration of E²CO Eight Actions</h3>
+                <h3>Demonstration of E²GCO Eight Actions</h3>
                 <!--=================*******==========================-->
                 <div id="visulization" class="video_container">
                     <ol>
@@ -230,10 +231,7 @@
                 <br>
                 <div style="text-align: justify; display: block; margin-right: auto;">
                     <p>
-                        This paper introduces E²CO, an Event-driven Eye-Controlled Operation that enables eye-gaze smartphone interactions without using hands. E²CO aims to address the following limitations of existing eye-gaze interaction methods for smartphones. (1) The front camera of a smartphone usually has limited perceptual capabilities, and gaze estimation is a typically difficult task for small target acquisition. (2) In real-world usage, significant relative motion between smartphones and users’ eyes complicates their interaction. Even with an accurate gaze estimation algorithm, estimating this relative motion is difficult, thus hindering precise eye control interaction. (3) The computing resources and power resources of smartphones are usually limited compared to desktop computers.
-                    </p>
-                    <p>
-                        E²CO employs a lightweight gaze-estimation module with a robust Gaze Positions Clustering Anti-Shake, allowing reliable gaze acquisition. E²CO utilizes the principle of event cameras to optimize the activation and deactivation of the system, significantly reducing power consumption. E²CO designs a series of robust and easily distinguishable actions based on the users’ gaze positions, gaze gestures, dwell time, and eye blinks, allowing for operations on various smartphone pages, even when gaze estimation is less than perfect. We have implemented a prototype of E²CO on smartphones and conducted an extensive user study to validate its efficacy. The results of this study showcase E²CO’s precise control capabilities across various scenarios.
+                        Existing gaze-based smartphone interaction methods generally need the auxiliary of hand motions to realize control, and most of them can achieve only simple control operations, which are far from practical smartphone control. To this end, we propose a novel eye-gaze-based smartphone interaction method named Event-driven Eye-Gaze-Controlled Operation (E²GCO), which can realize comprehensive smartphone control operations just using human eyes and gazes. We designed four pairs of eye-gaze-based interaction actions that are easy to implement and distinguish, based on which E²GCO can control all kinds of smartphone pages. Before the interaction, an anti-jitter strategy-based gaze estimation method is exploited to solve the jitter problem of human eye fixation and detect both accurate and stable human gaze locations on smartphone screens, even when the users are moving. The interaction can be executed more accurately based on the stable and accurate gaze locations. In addition, the event camera technology is introduced in E²GCO to significantly decrease its power consumption, making E²GCO more power-efficient to deploy on smartphones. We have implemented the prototype of E²GCO on different brands of smartphones and conducted a comprehensive user study to validate its efficacy. The user study demonstrate E²GCO's superior smartphone control capabilities across various scenarios. 
                     </p>
                     </div>
                 <div id="img_intro_examples" class="img_container">
@@ -248,8 +246,8 @@
                 </div>
                 <div class="section">
                     <ol>
-                        <p><b>Demonstration of the E²CO system features.</b>
-                            (a) The range of the user’s gaze position fluctuation is significantly reduced with the help of the Gaze Positions Clustering Anti-Shake. (b) When more than 10% of the event pixels are detected, the camera triggers the event and records the activity (such as T2 and T4), thus greatly reducing the recording of extraneous data. A comparison of the percentage of battery power over the same usage time for E²CO with and without the event-driven detector enabled. (c) We designed eight actions for E²CO system interactions, and this figure shows three: A. Back; B. Switch to Next; C. Click</p>
+                        <p><b>Illustration of E²GCO's Anti-Jitter Strategy (a), Event-Driven Detector (b), and Interaction actions (c).</b>
+                            (a) When the distance between the predicted gaze positions of adjacent frames is less than the threshold τ, the gaze position of the current frame is adjusted to the position of the previous frame, otherwise it remains unchanged. (b) When more than 10% pixels of one frame are 'events', $E²GCO$ triggers the event and perform gaze estimation (such as T2 and T4). Such technology greatly reduce the gaze estimation times. A comparison of the usage time for the same amount of power with and without event camera technology for E²GCO. (c) We designed eight actions for $E²GCO$ system interactions, and show three examples here. A. Back. B. Switch to Next. C. Click</p>
                     </ol>
                 </div>
             </div>
@@ -303,7 +301,7 @@
             </div>
             <div class="section">
                 <ol>
-                    <p><b>The actions and user tests corresponding to the E²CO.</b>
+                    <p><b>The actions and user tests corresponding to the E²GCO.</b>
                         (a) Gazing at the “Bottom” area to swipe the page up, (b) Gazing at the “Top” area to swipe the page down, (c) Staring at the “Left” area to switch to the left page, (d) Staring
                         at the “Right” area to switch to the right page, (e) Swiftly shifting gaze from “Bottom” to “Up” to switch to the next short video, (f) Swiftly
                         shifting gaze from “Up” to “Bottom” to switch to the previous short video, (g) Closing the right eye and keeping the left eye open to click
