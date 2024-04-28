@@ -20,7 +20,7 @@ redirect_from:
 
 # 论文和专利成果：
 
-论文：[**E²CO: Event-driven Eye-controlled Operation for Smartphone Interaction**](../project_pages/E2CO.html) 在投 
+论文：[**E²GO : Free Your Hands for Smartphone Interaction**](../project_pages/E2CO.html) 在投 
 
 - 本文提出了一种新的交互方法，该方法完全依赖于眼动信息。
 - 引入了一种计算用户注视位置的新方法，为注意力的测量和利用提供了一个全新的视角。
