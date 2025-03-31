@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Personal Homepage"
+title: "个人简介"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -20,15 +20,18 @@ redirect_from:
 
 - 主要研究方向：人机交互，计算机视觉
 
+------
+
 # 论文和专利成果：
 
 **论文**
 
-[**E²GO : Free Your Hands for Smartphone Interaction**](../project_pages/E2CO.html)(IJHCI, 已接收) 
+[**E²GO : Free Your Hands for Smartphone Interaction**](../project_pages/E2CO.html) (IJHCI, 已接收) 
 
 **发明专利**
 
-- 专利号:ZL 2022 1 1514332.2，发明名称：一种眼动控制智能手机的方法
+- 一种眼动控制智能手机的方法
+
 ------
 
 ------
